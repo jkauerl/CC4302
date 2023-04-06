@@ -12,10 +12,10 @@ test 1 aprobado
 
 Test 2: Uno ejemplo mas grande con n=26, sin solucion
 Calculando secuencialmente 2 veces
-Tiempo secuencial= 7627 milisegundos
-Tiempo secuencial= 7553 milisegundos
+Tiempo secuencial= 7625 milisegundos
+Tiempo secuencial= 7615 milisegundos
 Calculando en paralelo hasta 5 veces
-buscar par tiempo= 2864 miliseg., speedup= 2.637221
+buscar par tiempo= 2572 miliseg., speedup= 2.960731
 test 1 aprobado: speedup >= 0.010000
 
 --------------------------------------------------
@@ -25,7 +25,7 @@ Calculando secuencialmente 2 veces
 -3 -2 5 
 Tiempo secuencial= 0 milisegundos
 Calculando en paralelo
-buscar par tiempo= 19192 miliseg., speedup= 0.000000
+buscar par tiempo= 19185 miliseg., speedup= 0.000000
 No se preocupe.  Es normal que la version paralela se demore
 mucho mas.  Pero piense por que.
 
@@ -42,10 +42,10 @@ test 1 aprobado
 
 Test 2: Uno ejemplo mas grande con n=26, sin solucion
 Calculando secuencialmente 2 veces
-Tiempo secuencial= 5853 milisegundos
-Tiempo secuencial= 5841 milisegundos
+Tiempo secuencial= 5374 milisegundos
+Tiempo secuencial= 5436 milisegundos
 Calculando en paralelo hasta 5 veces
-buscar par tiempo= 1976 miliseg., speedup= 2.955972
+buscar par tiempo= 1969 miliseg., speedup= 2.760792
 test 1 aprobado: speedup >= 0.010000
 
 --------------------------------------------------
@@ -55,7 +55,7 @@ Calculando secuencialmente 2 veces
 -3 -2 5 
 Tiempo secuencial= 0 milisegundos
 Calculando en paralelo
-buscar par tiempo= 15552 miliseg., speedup= 0.000000
+buscar par tiempo= 15547 miliseg., speedup= 0.000000
 No se preocupe.  Es normal que la version paralela se demore
 mucho mas.  Pero piense por que.
 
@@ -72,10 +72,10 @@ test 1 aprobado
 
 Test 2: Uno ejemplo mas grande con n=26, sin solucion
 Calculando secuencialmente 2 veces
-Tiempo secuencial= 2930 milisegundos
-Tiempo secuencial= 2925 milisegundos
+Tiempo secuencial= 2948 milisegundos
+Tiempo secuencial= 2873 milisegundos
 Calculando en paralelo hasta 5 veces
-buscar par tiempo= 975 miliseg., speedup= 3.000000
+buscar par tiempo= 996 miliseg., speedup= 2.884538
 test 1 aprobado: speedup >= 1.500000
 
 --------------------------------------------------
@@ -85,7 +85,7 @@ Calculando secuencialmente 2 veces
 -3 -2 5 
 Tiempo secuencial= 0 milisegundos
 Calculando en paralelo
-buscar par tiempo= 6912 miliseg., speedup= 0.000000
+buscar par tiempo= 6997 miliseg., speedup= 0.000000
 No se preocupe.  Es normal que la version paralela se demore
 mucho mas.  Pero piense por que.
 
