@@ -1,0 +1,7 @@
+*.zip
+*.csv
+*.ipynb_checkpoints
+*.RData
+*.Rhistory
+*.code-workspace
+*.vscode

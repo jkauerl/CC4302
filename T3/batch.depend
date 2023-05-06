@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1681432113 source:/home/lmateu/Cursos/CC41B/231/T3-sol/batch.c
+	<stdlib.h>
+	<unistd.h>
+	<string.h>
+	<stdio.h>
+	<pthread.h>
+	<stdarg.h>
+	<stdint.h>
+	<sys/time.h>
+	"pss.h"
+	"batch.h"
+
+1681430333 /home/lmateu/Cursos/CC41B/231/T3-sol/pss.h
+
+1681427164 /home/lmateu/Cursos/CC41B/231/T3-sol/batch.h
+
+1681430333 source:/home/lmateu/Cursos/CC41B/231/T3-sol/pss.c
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	"pss.h"
+
+1681432408 source:/home/lmateu/Cursos/CC41B/231/T3-sol/test-batch.c
+	<stdlib.h>
+	<unistd.h>
+	<string.h>
+	<stdio.h>
+	<pthread.h>
+	<stdarg.h>
+	<stdint.h>
+	<sys/time.h>
+	"batch.h"
+

@@ -1,0 +1,66 @@
+Sistema operativo utilizado
+Linux debian11mate 5.10.0-16-amd64 #1 SMP Debian 5.10.127-2 (2022-07-23) x86_64 GNU/Linux
+==== run-san ====
+gcc -g -DSAN=1 -fsanitize=address -fsanitize=undefined -Wall -Werror -std=c18  test-batch.c batch.c pss.c -lm -lpthread -o batch.bin-san
+./batch.bin-san
+Test secuencial: 1 solo job a la vez
+Tiempo transcurrido: 302 milisegundos
+
+Deteniendo el sistema batch
+----------------------------------------
+
+Test paralelo: 2 jobs simultaneos
+Tiempo transcurrido: 201 milisegundos
+----------------------------------------
+
+Test paralelo: 100 jobs y 10 threads
+Tiempo transcurrido: 1005 milisegundos
+----------------------------------------
+
+Test del orden de llegada: 10 jobs separados por 100 milisegundos
+Tiempo transcurrido: 2018 milisegundos
+----------------------------------------
+
+Cada '.' corresponde a 1000 jobs lanzados
+Cada ':' corresponde a 1000 jobs terminados
+Cada '-' corresponde a 1000 waitJob completados
+El '$' corresponde a la llamada de stopBatch
+
+test de robustez con 10 threads y 1000 jobs
+creando jobs
+:.-
+esperando jobs
+$
+Tiempo transcurrido: 19 milisegundos
+test de robustez con 100 threads y 10000 jobs
+creando jobs
+:.:.:.:.:.:.:.:.:.:.----------
+esperando jobs
+$
+Tiempo transcurrido: 146 milisegundos
+test de robustez con 400 threads y 200000 jobs
+creando jobs
+:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.::..::.:..:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:..::.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.----:.----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------$
+esperando jobs
+
+Tiempo transcurrido: 1421 milisegundos
+Felicitaciones.  Su tarea paso todos los tests
+==== run-thr ====
+gcc -g -DSAN=1 -fsanitize=thread -Wall -Werror -std=c18  test-batch.c batch.c pss.c -lm -lpthread -o batch.bin-thr
+./batch.bin-thr
+Test secuencial: 1 solo job a la vez
+Tiempo transcurrido: 308 milisegundos
+
+Deteniendo el sistema batch
+----------------------------------------
+
+Test paralelo: 2 jobs simultaneos
+Tiempo transcurrido: 204 milisegundos
+----------------------------------------
+
+Test paralelo: 100 jobs y 10 threads
+Tiempo transcurrido: 1006 milisegundos
+----------------------------------------
+
+Test del orden de llegada: 10 jobs separados por 100 milisegundos
+Tiempo transcurrido: 2299 milisegundos
