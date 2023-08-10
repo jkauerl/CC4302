@@ -5,3 +5,10 @@
 *.Rhistory
 *.code-workspace
 *.vscode
+Modules2020-2
+*.tgz
+*.cmd
+*.symvers
+*.ko
+*.mod
+

@@ -1,0 +1,88 @@
+# depslib dependency file v1.0
+1682536422 source:/home/lmateu/Cursos/CC41B/231/T4-sol/nexchange.c
+	"nthread-impl.h"
+
+1682541959 source:/home/lmateu/Cursos/CC41B/231/T4-sol/nKernel/mutex-cond.c
+	"nthread-impl.h"
+
+1682537568 /home/lmateu/Cursos/CC41B/231/T4-sol/nKernel/nthread-impl.h
+	<pthread.h>
+	<signal.h>
+	"nthread.h"
+
+1682538499 /home/lmateu/Cursos/CC41B/231/T4-sol/nKernel/nthread.h
+	<stdlib.h>
+	<unistd.h>
+	<string.h>
+	<errno.h>
+	<stdio.h>
+	<time.h>
+	<sys/time.h>
+	<sys/resource.h>
+	<stdarg.h>
+	"pss.h"
+	<pthread.h>
+	<semaphore.h>
+
+1649082247 /home/lmateu/Cursos/CC41B/231/T4-sol/nKernel/pss.h
+
+1650395118 source:/home/lmateu/Cursos/CC41B/231/T4-sol/nKernel/nmsgs.c
+	"nthread-impl.h"
+
+1650735097 source:/home/lmateu/Cursos/CC41B/231/T4-sol/nKernel/nStack-amd64.s
+
+1682539320 source:/home/lmateu/Cursos/CC41B/231/T4-sol/nKernel/nsystem.c
+	"nthread-impl.h"
+	"nSystem.h"
+
+1650496603 /home/lmateu/Cursos/CC41B/231/T4-sol/nKernel/nSystem.h
+	"nthread.h"
+
+1682539806 source:/home/lmateu/Cursos/CC41B/231/T4-sol/nKernel/nthread.c
+	<errno.h>
+	<stdint.h>
+	<signal.h>
+	<stdarg.h>
+	<string.h>
+	"nthread-impl.h"
+
+1682538793 source:/home/lmateu/Cursos/CC41B/231/T4-sol/nKernel/ntime.c
+	<errno.h>
+	<stdint.h>
+	<signal.h>
+	<stdarg.h>
+	<string.h>
+	"nthread-impl.h"
+
+1664199163 source:/home/lmateu/Cursos/CC41B/231/T4-sol/nKernel/nutil.c
+	"nthread-impl.h"
+	<stdio.h>
+
+1649082025 source:/home/lmateu/Cursos/CC41B/231/T4-sol/nKernel/pss.c
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	"pss.h"
+
+1666467614 source:/home/lmateu/Cursos/CC41B/231/T4-sol/nKernel/sched-fcfs-1core.c
+	"nthread-impl.h"
+
+1666467952 source:/home/lmateu/Cursos/CC41B/231/T4-sol/nKernel/sched-fcfs.c
+	"nthread-impl.h"
+
+1650486488 source:/home/lmateu/Cursos/CC41B/231/T4-sol/nKernel/sched-pri-1core.c
+	"nthread-impl.h"
+
+1682539191 source:/home/lmateu/Cursos/CC41B/231/T4-sol/nKernel/sched-rr.c
+	"nthread-impl.h"
+	<sys/resource.h>
+
+1650906243 source:/home/lmateu/Cursos/CC41B/231/T4-sol/nKernel/sem.c
+	"nthread-impl.h"
+
+1682539936 source:/home/lmateu/Cursos/CC41B/231/T4-sol/test-nexchange.c
+	"nthread.h"
+	"nexchange.h"
+
+1682537404 /home/lmateu/Cursos/CC41B/231/T4-sol/nexchange.h
+

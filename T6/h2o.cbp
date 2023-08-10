@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="nexchange" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/test" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-pedantic" />
+					<Add option="-Wall" />
+					<Add option="-std=c17" />
+					<Add option="-g" />
+					<Add option="-pedantic -Werror -InKernel -DNTHREADS" />
+				</Compiler>
+				<Linker>
+					<Add option="-lpthread -lm -lrt" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/test" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-pedantic" />
+					<Add option="-Wall" />
+					<Add option="-std=c17" />
+					<Add option="-pedantic -Werror -O -DOPT -DNTHREADS -InKernel" />
+				</Compiler>
+				<Linker>
+					<Add option="-lpthread -lm -lrt" />
+				</Linker>
+			</Target>
+			<Target title="Sanitize">
+				<Option output="bin/Sanitize/test" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Sanitize/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-pedantic" />
+					<Add option="-Wall" />
+					<Add option="-std=c17" />
+					<Add option="-g" />
+					<Add option="-pedantic -Werror -fsanitize=address -fsanitize=undefined -DSAN -DNTHREADS -InKernel" />
+				</Compiler>
+				<Linker>
+					<Add option="-fsanitize=address -fsanitize=undefined -lpthread -lm -lrt" />
+				</Linker>
+			</Target>
+			<Target title="Thread">
+				<Option output="bin/Thread/test" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Thread/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="sin busy-waiting" />
+				<Compiler>
+					<Add option="-pedantic" />
+					<Add option="-Wall" />
+					<Add option="-std=c17" />
+					<Add option="-g" />
+					<Add option="-pedantic -Werror -fsanitize=thread -DNTHREADS -InKernel" />
+				</Compiler>
+				<Linker>
+					<Add option="-fsanitize=thread -lpthread -lm -lrt" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="h2o.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="h2o.h" />
+		<Unit filename="pss.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pss.h" />
+		<Unit filename="spinlocks.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="spinlocks.h" />
+		<Unit filename="swap.s" />
+		<Unit filename="test-h2o.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
